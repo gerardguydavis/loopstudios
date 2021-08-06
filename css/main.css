@@ -138,11 +138,12 @@ textarea {
 
    /*****INTERACTIVE VR*****/
 
-   #interactive {
+   #interactive {  
+     width: 100%;
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
-     margin: 96px 0 48px;
+     margin: 96px 0 0;
    }
 
    #image-interactive{
@@ -187,6 +188,7 @@ textarea {
      flex-flow: row wrap;
      justify-content: center;
      flex-basis: 327px;
+     margin: 48px 0;
    }
 
    #creations h2 {
@@ -209,19 +211,14 @@ textarea {
     grid-row-gap: 24px;
   }
 
-  #button {
-    grid-row-start: 9;
-    grid-row-end: 10;
-  }
-
   .creation {
     padding: 30px 20px;
     display: flex;
   }
 
   .overlay {
-    width: 100%;
-    padding: 60px 20px;
+    width: 327px;
+    padding: 60px 0;
     margin-top: -30px;
     margin-left: -20px;
     position: absolute;
@@ -298,6 +295,75 @@ textarea {
     letter-spacing: 5px;
     font-size: 14px;
     margin: 34px 0;
+  }
+
+  /*****FOOTER*****/
+  footer {
+    padding: 56px 0;
+    display: flex;
+    justify-content: center;
+    background-color: #000;
+  }
+
+  .footer-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    width: 275px;
+  }
+
+  #footer-nav {
+    width: 100%;
+    text-align: center;
+    padding: 0;
+    margin: 32px 0;
+  }
+
+  #footer-nav li {
+    list-style: none;
+    margin: 0;
+    line-height: 25px;
+    padding: 8px 0;
+  }
+
+  #footer-logo {
+    width: 144px;
+  }
+
+  #footer-nav a {
+    text-decoration: none;
+    color: #fff;
+    font-family: "Alata", sans-serif;
+  }
+
+  .socials {
+    width: 144px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .socials img {
+    width: 24px;
+  }
+
+  #copyright {
+    margin: 16px 0;
+    width: 100%;
+    font-family: "Alata", sans-serif;
+    color: hsl(0, 0%, 41%);
+  }
+
+  .attribution {
+    margin: 0;
+    width: 65%;
+    font-family: "Alata", sans-serif;
+    color: hsl(0, 0%, 41%);
+    font-size: 12px;
+  }
+
+  .attribution a {
+    text-decoration: none;
+    color: #fff;
   }
 
 
