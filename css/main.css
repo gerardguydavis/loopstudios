@@ -108,7 +108,7 @@ textarea {
      height: 100%;
      justify-content: space-between;
      margin: 40px 0 -75px;
-     z-index: 500;
+     z-index: 3;
    }
 
    #logo {
@@ -138,11 +138,6 @@ textarea {
      text-decoration: none;
    }
 
-   #hamburger,
-   #close {
-     transition: .3s;
-   }
-
    .toggle-off {
      display: none;
    }
@@ -152,12 +147,12 @@ textarea {
   }
 
   .slide-down {
-    animation: slide-down .5s;
+    animation: slide-down .4s ease-out;
     top: 0;
   }
 
   .slide-up {
-    animation: slide-up .5s;
+    animation: slide-up .1s ease-in;
     top: -106%;
   }
 
@@ -415,20 +410,24 @@ textarea {
 @keyframes slide-down {
   from {
     top: -106%;
+    opacity: 0;
   }
 
   to {
     top: 0;
+    opacity: 1;
   }
 }
 
 @keyframes slide-up {
   from {
+    opacity: 1;
     top: 0;
   }
 
   to {
-    top: -106%;
+    opacity: 0;
+    top: 0;
   }
 }
 /* ==========================================================================

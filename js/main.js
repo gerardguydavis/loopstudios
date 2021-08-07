@@ -16,7 +16,7 @@ hamburger.addEventListener("click", function () {
         setTimeout(function () {
             hamburger.classList.add("toggle-off");
             closeButton.classList.remove("toggle-off");
-        }, 0200);
+        }, 0050);
     }
 });
 
@@ -24,9 +24,7 @@ closeButton.addEventListener("click", function () {
     if (navmenu.classList.contains("slide-down")) {
         navmenu.classList.add("slide-up");
         navmenu.classList.remove("slide-down");
-        setTimeout(function () {
-            closeButton.classList.add("toggle-off");
-            hamburger.classList.remove("toggle-off");
-        }, 0300);
+        closeButton.classList.add("toggle-off");
+        hamburger.classList.remove("toggle-off");
     }
 });
