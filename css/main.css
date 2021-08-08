@@ -358,6 +358,11 @@ textarea {
     width: 275px;
   }
 
+  
+  #footer-logo {
+    width: 144px;
+  }
+
   #footer-nav {
     width: 100%;
     text-align: center;
@@ -370,10 +375,6 @@ textarea {
     margin: 0;
     line-height: 25px;
     padding: 8px 0;
-  }
-
-  #footer-logo {
-    width: 144px;
   }
 
   #footer-nav a {
@@ -436,6 +437,17 @@ textarea {
   to {
     opacity: 0;
     top: 0;
+  }
+}
+
+@keyframes grow {
+  from {
+    width: 0;
+  }
+
+  to {
+    width: 24px;
+    transform-origin: center;
   }
 }
 /* ==========================================================================
@@ -699,11 +711,11 @@ textarea {
   }
 
   #soccer-team {
-    background: url('../images/desktop/image-soccer-team.jpg') center;]
+    background: url('../images/desktop/image-soccer-team.jpg') center;
   }
 
   #the-grid {
-    background: url('../images/desktop/image-grid.jpg') center;]
+    background: url('../images/desktop/image-grid.jpg') center;
   }
 
   #the-grid h3 {
@@ -755,9 +767,9 @@ textarea {
     width: 1100px;
     display: grid;
     grid-template-columns: 50% 50%;
-    grid-template-rows: 25px 25px;
-    grid-row-gap: 25px;
-    height: 160px;
+    grid-template-rows: 35px 35px 35px;
+    grid-row-gap: 12px;
+    align-items: flex-start;
   }
 
   #footer-logo {
@@ -770,19 +782,18 @@ textarea {
     width: 380px;
     justify-content: space-between;
     grid-row-start: 2;
-    grid-column-start: 1;
     margin: 0;
-    padding: 0;
   }
 
   #footer-nav li {
     display: inline;
-    line-height: 0;
+    padding: 0;
   }
 
   .socials {
     width: 100%;
     justify-content: flex-end;
+    align-items: baseline;
     grid-column-start: 2;
   }
 
@@ -791,11 +802,8 @@ textarea {
   }
 
   #copyright {
-    grid-column-start: 2;
-    grid-row-start: 2;
-    width: 100%;
     text-align: right;
-    margin: 0;
+    margin: 4px 0 0 0;
   }
 
   .attribution {
@@ -823,6 +831,33 @@ textarea {
     color: #fff;
     cursor: pointer;
     transition: .2s;
+  }
+
+  .more-button:active {
+    font-size: 12px;
+    background-color: #333;
+    transition: .1s;
+  }
+
+  #navmenu a:hover::after,
+  .socials a:hover::after {
+    content: '';
+    height: 2px;
+    width: 24px;
+    margin: 10px auto 0;
+    display: block;
+    background-color: #fff;
+    animation: grow .2s;
+  }
+
+  #footer-nav a:hover::after {
+    content: '';
+    height: 2px;
+    width: 24px;
+    margin: 4px auto 0;
+    display: block;
+    background-color: #fff;
+    animation: grow .2s;
   }
 
 }
