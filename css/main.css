@@ -594,10 +594,12 @@ textarea {
     font-family: "Alata", sans-serif;
     font-size: 15px;
     padding: 0;
+    margin: 0;
   }
 
   .hide {
     top: 0;
+    height: 100%;
   }
 
   .hero-text {
@@ -672,30 +674,36 @@ textarea {
     padding: 0;
     height: 40px;
     margin: 20px 0 80px;
+    transition: .1s;
   }
   
   #mobile-button {
     display: none;
   }
 
+  .creation {
+    padding: 0;
+  }
+
+  .creation h3,
+  .overlay {
+    transition: .1s;
+  }
+
   #deep-earth {
     background: url('../images/desktop/image-deep-earth.jpg') center;
-    background-size: cover;
   }
 
   #night-arcade {
     background: url('../images/desktop/image-night-arcade.jpg') center;
-    background-size: cover;
   }
 
   #soccer-team {
-    background: url('../images/desktop/image-soccer-team.jpg') center;
-    background-size: cover;
+    background: url('../images/desktop/image-soccer-team.jpg') center;]
   }
 
   #the-grid {
-    background: url('../images/desktop/image-grid.jpg') center;
-    background-size: cover;
+    background: url('../images/desktop/image-grid.jpg') center;]
   }
 
   #the-grid h3 {
@@ -704,22 +712,18 @@ textarea {
 
   #from-above {
     background: url('../images/desktop/image-from-above.jpg') center;
-    background-size: cover;
   }
 
   #borealis {
     background: url('../images/desktop/image-pocket-borealis.jpg') center;
-    background-size: cover;
   }
 
   #curiosity {
     background: url('../images/desktop/image-curiosity.jpg') center;
-    background-size: cover;
   }
 
   #fisheye {
     background: url('../images/desktop/image-fisheye.jpg') center;
-    background-size: cover;
   }
 
   .overlay {
@@ -733,16 +737,92 @@ textarea {
     z-index: 1;
   }
 
-  .creation {
-    padding: 0;
-  }
-
   .creation h3 {
     font-size: 32px;
     line-height: 32px;
     max-width: 164px;
     margin-left: 40px;
     margin-top: 354px;
+  }
+
+  /*****FOOTER*****/
+
+  footer {
+    padding: 44px 0;
+  }
+
+  .footer-wrapper {
+    width: 1100px;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: 25px 25px;
+    grid-row-gap: 25px;
+    height: 160px;
+  }
+
+  #footer-logo {
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  #footer-nav {
+    display: flex;
+    width: 380px;
+    justify-content: space-between;
+    grid-row-start: 2;
+    grid-column-start: 1;
+    margin: 0;
+    padding: 0;
+  }
+
+  #footer-nav li {
+    display: inline;
+    line-height: 0;
+  }
+
+  .socials {
+    width: 100%;
+    justify-content: flex-end;
+    grid-column-start: 2;
+  }
+
+  .socials a {
+    margin-left: 16px;
+  }
+
+  #copyright {
+    grid-column-start: 2;
+    grid-row-start: 2;
+    width: 100%;
+    text-align: right;
+    margin: 0;
+  }
+
+  .attribution {
+    width: 200%;
+    text-align: center;
+  }
+
+  /*****LISTENERS*****/
+  .creation:hover {
+    cursor: pointer;
+  }
+
+  .creation:hover .overlay {
+    background: rgba(255, 255, 255, 0.75071);
+    transition: .2s;
+  }
+
+  .creation:hover h3 {
+    color: #000;
+    transition: .2s;
+  }
+
+  .more-button:hover {
+    background-color: #000;
+    color: #fff;
+    cursor: pointer;
+    transition: .2s;
   }
 
 }
