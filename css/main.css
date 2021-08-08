@@ -326,7 +326,7 @@ textarea {
     background-size: cover;
   }
 
-  #more-button {
+  .more-button {
     width: 157px;
     padding: 13px;
     background-color: #fff;
@@ -337,6 +337,10 @@ textarea {
     letter-spacing: 5px;
     font-size: 14px;
     margin: 34px 0;
+  }
+
+  #desktop-button {
+    display: none;
   }
 
   /*****FOOTER*****/
@@ -630,8 +634,117 @@ textarea {
   #text-interactive h2 {
     font-size: 48px;
     margin: 0 0 25px;
+  }
+
+  /*****CREATIONS*****/
+
+  #creations {
+    flex-basis: 1114px;
+    justify-content: center;
+  }
+
+  #creations-header {
+    display: flex;
+    width: 1114px;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  #creations-header h2 {
+    text-align: left;
+    font-size: 48px;
+    margin: 20px 0 80px;
+  }
+  
+  #creations-body {
+    width: 1114px;
+    grid-template-columns: 256px 256px 256px 256px;
+    grid-template-rows: 450px 450px;
+    grid-row-gap: 30px;
+    grid-column-gap: 30px;
+  }
+
+  #desktop-button {
+    display: block;
+  }
+
+  .more-button {
+    padding: 0;
+    height: 40px;
+    margin: 20px 0 80px;
+  }
+  
+  #mobile-button {
+    display: none;
+  }
+
+  #deep-earth {
+    background: url('../images/desktop/image-deep-earth.jpg') center;
+    background-size: cover;
+  }
+
+  #night-arcade {
+    background: url('../images/desktop/image-night-arcade.jpg') center;
+    background-size: cover;
+  }
+
+  #soccer-team {
+    background: url('../images/desktop/image-soccer-team.jpg') center;
+    background-size: cover;
+  }
+
+  #the-grid {
+    background: url('../images/desktop/image-grid.jpg') center;
+    background-size: cover;
+  }
+
+  #the-grid h3 {
+    max-width: 60px;
+  }
+
+  #from-above {
+    background: url('../images/desktop/image-from-above.jpg') center;
+    background-size: cover;
+  }
+
+  #borealis {
+    background: url('../images/desktop/image-pocket-borealis.jpg') center;
+    background-size: cover;
+  }
+
+  #curiosity {
+    background: url('../images/desktop/image-curiosity.jpg') center;
+    background-size: cover;
+  }
+
+  #fisheye {
+    background: url('../images/desktop/image-fisheye.jpg') center;
+    background-size: cover;
+  }
+
+  .overlay {
+    width: 256px;
+    padding: 225px 0;
+    margin-top: 0;
+    margin-left: 0;
+    position: absolute;
+    background: rgb(0,0,0);
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.0001) 0%, rgba(0, 0, 0, 0.601863) 100%);
+    z-index: 1;
+  }
+
+  .creation {
     padding: 0;
   }
+
+  .creation h3 {
+    font-size: 32px;
+    line-height: 32px;
+    max-width: 164px;
+    margin-left: 40px;
+    margin-top: 354px;
+  }
+
 }
 
 @media print,
