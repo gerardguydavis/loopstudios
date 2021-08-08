@@ -181,7 +181,7 @@ textarea {
    /*****INTERACTIVE VR*****/
 
    #interactive {  
-     width: 100%;
+     flex-basis: 100%;
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
@@ -529,7 +529,7 @@ textarea {
 @media only screen and (min-width: 1200px) {
 
   .hero {
-    background: rgba(0, 0, 0, 0.4) url('../images/desktop/image-hero.jpg') center;
+    background: rgba(0, 0, 0, 0.4) url('../images/desktop/image-hero.jpg') top;
     background-size: cover;
     filter: saturate(1.5);
   }
@@ -562,6 +562,7 @@ textarea {
     margin: 0;
     padding: 0;
     height: 100%;
+    align-items: baseline;
   }
 
   #logo {
@@ -589,7 +590,6 @@ textarea {
     font-family: "Alata", sans-serif;
     font-size: 15px;
     padding: 0;
-
   }
 
   .hide {
@@ -606,6 +606,31 @@ textarea {
     width: 570px;
     line-height: 70px;
     padding: 40px 40px 26px;
+  }
+
+  #interactive {
+    margin: 165px 0;
+    width: 1110;
+    align-items: flex-end;
+    justify-content: center;
+  }
+
+  #image-interactive {
+    flex-basis: 730px;
+  }
+
+  #text-interactive {
+    background-color: #fff;
+    flex-basis: 445px;
+    padding: 96px 0 0 96px;
+    margin-left: -160px;
+    text-align: left;
+  }
+
+  #text-interactive h2 {
+    font-size: 48px;
+    margin: 0 0 25px;
+    padding: 0;
   }
 }
 
