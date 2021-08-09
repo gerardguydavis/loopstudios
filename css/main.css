@@ -95,11 +95,21 @@ textarea {
    .hero {
      display: flex;
      flex-flow: row wrap;
-     background: rgba(0, 0, 0, 0.4) url('../images/mobile/image-hero.jpg');
+     background: url('../images/mobile/image-hero.jpg');
      background-size: cover;
      justify-content: center;
      min-height: 650px;
    }
+
+   .hero:before {
+    content: "";
+    position: absolute;
+    left: 0; right: 0;
+    top: 0; bottom: 0;
+    height: 650px;
+    z-index: -1;
+    background: rgba(0,0,0,.5);
+  }
 
    .header-wrapper {
      display: flex;
@@ -544,16 +554,6 @@ textarea {
     background: url('../images/desktop/image-hero.jpg') top;
     background-size: cover;
     filter: saturate(1.25);
-  }
-
-  .hero:before {
-    content: "";
-    position: absolute;
-    left: 0; right: 0;
-    top: 0; bottom: 0;
-    height: 650px;
-    z-index: -1;
-    background: rgba(0,0,0,.5);
   }
 
   header {
