@@ -192,11 +192,11 @@ textarea {
    /*****INTERACTIVE VR*****/
 
    #interactive {  
-     flex-basis: 100%;
+     width: 327px;
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
-     margin: 96px 0 0;
+     margin: 96px auto 0;
    }
 
    #image-interactive{
@@ -580,8 +580,8 @@ textarea {
   /*****INTERACTIVE VR*****/
 
   #interactive {
-    flex-basis: 704px;
-    margin: 55px 0;
+    width: 704px;
+    margin: 55px auto;
     align-items: flex-end;
     justify-content: center;
   }
@@ -819,7 +819,8 @@ footer {
   /*****INTERACTIVE VR*****/
 
   #interactive {
-    margin: 165px 0;
+    width: auto;
+    margin: 165px auto;
   }
 
   #image-interactive {
