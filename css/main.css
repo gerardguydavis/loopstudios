@@ -852,6 +852,7 @@ footer {
 
   #creations-header h2 {
     font-size: 48px;
+    margin-bottom: 80px;
   }
   
   #creations-body {
@@ -864,6 +865,10 @@ footer {
 
   .creation {
     padding: 0;
+  }
+
+  .creation h3 {
+    font-weight: 300;
   }
 
   .creation h3,
