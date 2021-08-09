@@ -847,6 +847,11 @@ footer {
 
   #creations-header {
     flex-basis: 1114px;
+    align-items: flex-start;
+  }
+
+  #creations-header h2 {
+    font-size: 48px;
   }
   
   #creations-body {
