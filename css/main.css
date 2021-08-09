@@ -138,8 +138,9 @@ textarea {
     display: block;
     position: absolute;
     background-color: #000;
-    padding: 221px 0 196px;
     margin: 0;
+    padding: 221px 0 196px;
+    left: 0;
     width: 100%;
    }
 
@@ -569,8 +570,6 @@ textarea {
     width: 704px;
   }
 
-
-
   #logo {
     width: 192px;
   }
@@ -578,6 +577,7 @@ textarea {
   #navmenu {
     padding: 200px 0;
     height: 250px;
+    left: initial;
     right: 0;
     width: 320px;
    }
