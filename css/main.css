@@ -240,8 +240,8 @@ textarea {
      display: flex;
      flex-flow: row wrap;
      justify-content: center;
-     flex-basis: 327px;
-     margin: 48px 0;
+     width: 327px;
+     margin: 48px auto;
    }
 
    #creations h2 {
@@ -252,7 +252,7 @@ textarea {
      text-align: center;
      margin: 48px 0;
      justify-content: center;
-     flex-basis: 100%;
+     width: 100%;
      font-weight: 300;
    }
 
@@ -605,7 +605,7 @@ textarea {
   /*****OUR CREATIONS*****/
 
   #creations {
-    flex-basis: 704px;
+    width: 704px;
   }
 
   #creations-header {
