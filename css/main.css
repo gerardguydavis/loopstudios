@@ -617,8 +617,6 @@ textarea {
 
   #creations {
     flex-basis: 704px;
-    margin: 48px 0;
-    flex-flow: row wrap;
   }
 
   #creations-header {
@@ -844,6 +842,7 @@ footer {
   #creations {
     flex-basis: 1114px;
     justify-content: center;
+    margin-bottom: 184px;
   }
 
   #creations-header {
