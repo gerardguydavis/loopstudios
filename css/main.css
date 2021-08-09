@@ -452,14 +452,6 @@ textarea {
   }
 }
 
-@keyframes grow {
-  from {
-    width: 0;
-  }
-
-  to {
-    width: 24px;
-  }
 }
 /* ==========================================================================
    Helper classes
@@ -734,25 +726,37 @@ footer {
     transition: .1s;
   }
 
-  #navmenu a:hover::after,
-  .socials a:hover::after {
+  #navmenu a::after,
+  .socials a::after {
     content: '';
     height: 2px;
-    width: 24px;
+    width: 0;
     margin: 10px auto 0;
     display: block;
     background-color: #fff;
-    animation: grow .2s;
+    transition: .2s;
   }
 
-  #footer-nav a:hover::after {
+  #footer-nav a::after {
     content: '';
     height: 2px;
-    width: 24px;
+    width: 0;
     margin: 4px auto 0;
     display: block;
     background-color: #fff;
-    animation: grow .2s;
+    transition: .2s;
+  }
+
+
+  #navmenu a:hover::after,
+  .socials a:hover::after {
+    width: 24px;
+    transition: .2s;
+  }
+
+  #footer-nav a:hover::after {
+    width: 24px;
+    transition: .2s;
   }
 }
 
