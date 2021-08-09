@@ -108,7 +108,7 @@ textarea {
     top: 0; bottom: 0;
     height: 650px;
     z-index: -1;
-    background: rgba(0,0,0,.5);
+    background: rgba(0,0,0,.4);
   }
 
    .header-wrapper {
