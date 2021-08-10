@@ -99,6 +99,7 @@ textarea {
      background-size: cover;
      justify-content: center;
      min-height: 650px;
+     min-width: 327px;
    }
 
    .hero:before {
@@ -361,6 +362,7 @@ textarea {
     display: flex;
     justify-content: center;
     background-color: #000;
+    min-width: 327px;
   }
 
   .footer-wrapper {
@@ -450,8 +452,6 @@ textarea {
     opacity: 0;
     top: 0;
   }
-}
-  
 }
 /* ==========================================================================
    Helper classes
@@ -576,6 +576,12 @@ textarea {
   .hero-text {
     width: 704px;
   }  
+
+  .hero-text h1 {
+    font-size: 54px;
+    line-height: 54px;
+    width: 400px;
+  }
   
   /*****INTERACTIVE VR*****/
 
@@ -611,9 +617,9 @@ textarea {
   #creations-header {
     display: flex;
     flex-flow: row;
-    flex-basis: 728px;
+    width: 728px;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
   }
 
   #creations-header h2 {
@@ -836,20 +842,20 @@ footer {
 
   #text-interactive h2 {
     font-size: 48px;
+    line-height: 48px;
     margin: 0 0 25px;
   }
 
   /*****OUR CREATIONS*****/
 
   #creations {
-    flex-basis: 1114px;
+    width: 1114px;
     justify-content: center;
-    margin-bottom: 184px;
+    margin-bottom: 48px auto 184px;
   }
 
   #creations-header {
-    flex-basis: 1114px;
-    align-items: flex-start;
+    width: 1114px;
   }
 
   #creations-header h2 {
