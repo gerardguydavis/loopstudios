@@ -851,7 +851,7 @@ footer {
   #creations {
     width: 1114px;
     justify-content: center;
-    margin-bottom: 48px auto 184px;
+    margin: 48px auto 184px;
   }
 
   #creations-header {
